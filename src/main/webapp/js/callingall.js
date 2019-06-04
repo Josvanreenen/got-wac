@@ -1,6 +1,6 @@
 //fetch loslaten op een METHOD op een URI
 //antwoord toevoegen aan de pagina
-fetch("/rest/GOT").then(response => {
+fetch("/rest/GOT", {method: "POST"}).then(response => {
 	if(response.ok){	return response.json()
 	}
 	else {
