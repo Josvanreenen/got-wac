@@ -6,7 +6,8 @@ fetch("/rest/GOT").then(response => {
 	else {
 		var head = document.createElement("h1")
 		head.appendChild(document.createTextNode("something went horribly wrong, is it random???"))
-		document.querySelector("body").appendChild(head)}
+		document.querySelector("body").appendChild(head)
+		return }
 	})
 	.then(myJson=>{
 	document.querySelector("body").appendChild(document.createElement("h1").appendChild(document.createTextNode(myJson.answer)))
